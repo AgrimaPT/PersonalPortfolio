@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/08b19c9ae0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Portfolio</a>
+
+        <i class="fa fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about" >About</a>
+            <a href="#projects" >Projects</a>
+            <a href="#contact" >Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, I am</h3>
+            <h1>Agrima</h1>
+            <h3 style="color: rgba(146, 227, 233);"><span>Software developer</span></h3>
+            <p></p>
+
+            <a href="/resume_softwaredeveloper.pdf" download class="btn" data-download="cv"> Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="first.jpg">
+        </div>
+
+    </section>
+ 
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="first.jpg">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">ABOUT ME</h2>
+            <p>Recent graduate with a Bachelor's degree in Computer Science and hands-on experience in Python full-stack development. Skilled in both frontend and backend technologies, with a strong focus on writing clean, maintainable code. Completed a successful internship at Futuro IT Solution. Eager to apply my technical skills in an entry-level Software Developer role, work in a collaborative environment, and contribute to impactful software solutions.</p>
+            <!-- <a href="#" class="btn">Read more</a> -->
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="eca.jfif">
+                <h2 style="text-align: center; margin-top: 10px;">ESTORE</h2>
+                <div class="layer">
+                    <h3>ESTORE</h3>
+                    <p>Developed an eCommerce app that enables users to browse and search for products. The app features a user-friendly interface, facilitating seamless shopping experience.</p>
+                </div>
+                <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+            <div class="projects-box">
+                <img src="jp.jfif">
+                <h2 style="text-align: center; margin-top: 10px;">JOB PORTAL APP</h2>
+                <div class="layer">
+                    <h3>JOB PORTAL APP</h3>
+                    <p>Created a web application where job seekers can register themselves at the website and 
+                        search for jobs that are suitable for them, whereas employers register with the website and 
+                        put-up jobs that are vacant at their company.</p>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="sms2.jfif">
+                <h2 style="text-align: center; margin-top: 10px;">STUDENT MANAGEMENT SYSTEM</h2>
+                <div class="layer">
+                    <h3>STUDENT MANAGEMENT SYSTEM</h3>
+                    <p>Developed a web application that can be used in educational institutes to simplify 
+                        information tracking and improve communication by making data easily accessible to all 
+                        students and teachers.</p>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="notifier.jpg">
+                <h2 style="text-align: center; margin-top: 10px;">NOTIFIER</h2>
+                <div class="layer">
+                    <h3>NOTIFIER</h3>
+                    <p>Developed a desktop notification application that enables users to receive real-time alerts and reminders for various tasks and events.</p>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="weather.jpg">
+                <h2 style="text-align: center; margin-top: 10px;">WEATHER APP</h2>
+                <div class="layer">
+                    <h3>WEATHER APP</h3>
+                    <p>Developed a weather application that allows users to search and view real-time weather information for multiple locations around the world.</p>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="port.jfif">
+                <h2 style="text-align: center; margin-top: 10px;">PERSONAL PORTFOLIO</h2>
+                <div class="layer">
+                    <h3>PERSONAL PORTFOLIO</h3>
+                    <p>Developed a personal portfolio website using HTML, CSS , JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Me</h2>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="1bc97110-ddbb-4021-9007-860881a8783e">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" id="name" name="Name" required>
+                <input type="email" placeholder="Email Address" id="email"  name="email" required>
+            </div>
+            
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" id="number" name="Number" required>
+                <input type="text" placeholder="Email Subject" id="emailsub" name="Subject" required>
+            </div>
+
+            <textarea cols="30" rows="10" placeholder="Message" id="message" name="Message" required></textarea>
+            <input type="submit" value="Send" class="btn" >
+
+        </form>
+    </section>
+
+
+    <footer>
+        <div class="footer-text">
+            <p class="m-0 text-center text-white" style="text-align: center;">Copyright &copy; portfolio 2024</p>
+        </div>
+    </footer>
+    
+
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
